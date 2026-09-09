@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>春秋四国象棋</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>春秋四国象棋</h1>
+        <div id="banner"></div>
+        <div id="conn"></div>
+      </header>
+      <main>
+        <div id="board-wrap"><canvas id="board"></canvas></div>
+        <aside id="panel"></aside>
+      </main>
+      <div id="tray"></div>
+      <div id="toast" class="hidden"></div>
+      <div id="overlay" class="hidden"></div>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

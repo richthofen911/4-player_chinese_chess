@@ -1,0 +1,23 @@
+{
+  "name": "chunqiu-siguo-xiangqi",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n srv,web \"tsx watch src/server/main.ts --dev --port 8080\" \"vite\"",
+    "build": "vite build && tsc -p tsconfig.server.json",
+    "start": "node dist/server/main.js",
+    "test": "tsx --test tests/rules/*.test.ts",
+    "test:e2e": "tsx --test tests/e2e/*.test.ts"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/ws": "^8.5.0",
+    "concurrently": "^9.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.6.0",
+    "vite": "^7.0.0"
+  }
+}
