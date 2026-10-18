@@ -14,6 +14,12 @@ npm start            # 默认 8080；npm start -- --port 9000 可换端口
 
 开发模式（vite 热更新 :5173 + 服务端 :8080）：`npm run dev`
 
+## 部署到 Render
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/richthofen911/4-player_chinese_chess)
+
+仓库根目录的 `render.yaml` 已配置为 Render Web Service（构建 `npm ci && npm run build`、启动 `npm start`、健康检查 `/healthz`）。一键部署、手动步骤、免费实例限制与故障排查见 [DEPLOY.md](./DEPLOY.md)。
+
 ## 玩法流程
 
 1. 任一家填昵称→创建房间（选座，默认红·晋），成为房主。

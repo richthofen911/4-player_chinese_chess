@@ -229,6 +229,11 @@ function route(mgr: RoomManager, conn: Conn, msg: ClientMsg): void {
       return;
     }
     case 'ping':
+      // 客户端心跳也算活跃：避免 30 分钟清扫把仍有玩家在线的房间删掉
+      if (conn.roomCode) {
+        const room = mgr.rooms.get(conn.roomCode);
+        if (room) mgr.touch(room);
+      }
       send(ws, { t: 'pong' });
       return;
   }

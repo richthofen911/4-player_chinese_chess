@@ -2,6 +2,9 @@
   "name": "chunqiu-siguo-xiangqi",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=22.12.0 <27"
+  },
   "scripts": {
     "dev": "concurrently -k -n srv,web \"tsx watch src/server/main.ts --dev --port 8080\" \"vite\"",
     "build": "vite build && tsc -p tsconfig.server.json",
