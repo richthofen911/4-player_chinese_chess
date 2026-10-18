@@ -2,10 +2,10 @@
 # 房间/对局状态保存在进程内存中，因此必须保持单实例（不要开启横向扩容）。
 services:
   - type: web
-    name: siguo-xiangqi
+    name: chunqiu-siguo-xiangqi
     runtime: node
     plan: free
-    region: oregon
+    region: ohio
     branch: main
     buildCommand: npm ci && npm run build
     startCommand: npm start

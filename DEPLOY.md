@@ -18,9 +18,9 @@
 
    | 配置项 | 值 |
    | --- | --- |
-   | Name | `siguo-xiangqi`（可自定义） |
+   | Name | `chunqiu-siguo-xiangqi`（可自定义） |
    | Language / Runtime | `Node` |
-   | Region | `Oregon`（或离玩家更近的区域） |
+   | Region | `Ohio`（离北美东部较近；也可按玩家位置选择） |
    | Build Command | `npm ci && npm run build` |
    | Start Command | `npm start` |
    | Instance Type | `Free` |
